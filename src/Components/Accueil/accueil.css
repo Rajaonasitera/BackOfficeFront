@@ -1,0 +1,40 @@
+/* StatsDashboard.css */
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .stat {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+  }
+  
+  .stat h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .stat p {
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* DashboardPage.css */
+.dashboard-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+  

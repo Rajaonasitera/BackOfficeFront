@@ -1,0 +1,39 @@
+body{
+    background: url('../Assets/motivid-org-7RY9A5Kz55Q-unsplash.jpg') center center/cover no-repeat;
+
+}
+.login-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.797);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: none;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
