@@ -1,12 +1,12 @@
 import './App.css';
-import Categorie from './Components/Gestion/Categorie';
 import Header from './Components/Header/Header';
+import Annonce from './Components/Annonce/Annonce';
 
 function App() {
   return(
     <div>
       <Header/>
-      <Categorie/>
+      <Annonce/>
     </div>
   );
 }

@@ -5,6 +5,8 @@ import '../Assets/css/material-dashboard.css.map'
 const Accueil = () => {
 
     return(
+    <div class="ambony">
+
         <div className="dashboard-page">
             <h1>Tableau de bord des statistiques</h1>
             <div className="stats-container">
@@ -18,6 +20,8 @@ const Accueil = () => {
                 </div>
             </div>
         </div>
+        
+    </div>
 
     )
 }

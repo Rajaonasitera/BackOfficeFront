@@ -38,3 +38,19 @@
     margin-top: 20px;
   }
   
+.ambony{
+    margin-top: 100px;
+}
+body{
+  background: url('../Assets/motivid-org-7RY9A5Kz55Q-unsplash.jpg') center center/cover no-repeat;
+  background-color: antiquewhite;
+
+}
+.titular {
+  display: block;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
