@@ -1,7 +1,6 @@
 import './login.css'
 import user_icon from '../Assets/person.png'
 import mdp_icon from '../Assets/password.png'
-import { useState } from 'react'
 
 
 
@@ -34,7 +33,6 @@ const Login = () => {
             };
             console.log(auth);
             let url = 'https://webservicevoiture-production.up.railway.app/auth/authenticate';
-            let urll = 'http://localhost:8080/auth/authenticate';
             let response = await fetch(url,{
               method:"POST",
               headers:{
@@ -44,7 +42,7 @@ const Login = () => {
             })
             response =await  response.json()
             console.log(response)
-            if(response.status=="ok"){
+            if(response.status==="ok"){
                 localStorage.setItem('Token',response.token);
                 
                 window.location.href='/Annonce';
