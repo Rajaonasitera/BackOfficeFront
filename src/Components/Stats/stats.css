@@ -9,15 +9,18 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: black;
 }
 
 .statistic {
-  /* background-color: #f0f0f0; */
+  background-color: #2b29296b;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   flex: 1;
   margin: 0 10px;
+  color: black;
+
 }
 
 .statistic-title {
@@ -32,6 +35,8 @@
 
 body {
 	background: #1f253d;
+  color: black;
+
 }
 
 ul {
@@ -414,8 +419,9 @@ BAR-CHART
 }
 
 body{
-    background: url('../Assets/motivid-org-7RY9A5Kz55Q-unsplash.jpg') center center/cover no-repeat;
-    background-color: antiquewhite;
+    /* background: url('../Assets/motivid-org-7RY9A5Kz55Q-unsplash.jpg') center center/cover no-repeat;
+    background-color: antiquewhite; */
+    background-color: white;
 
 }
 .block{

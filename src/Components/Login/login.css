@@ -1,15 +1,17 @@
 body{
-    background: url('../Assets/motivid-org-7RY9A5Kz55Q-unsplash.jpg') center center/cover no-repeat;
+    /* background: url('../Assets/motivid-org-7RY9A5Kz55Q-unsplash.jpg') center center/cover no-repeat; */
 
 }
 .login-container {
     width: 300px;
     margin: auto;
     padding: 20px;
-    border: 0px;
+    border: 1px solid rgba(99, 97, 97, 0.062);
     border-radius: 5px;
     margin-top: 50px;
     text-align: center;
+    
+    /* margin: auto; */
     background-color: rgba(255, 255, 255, 0.797);
   }
   

@@ -53,15 +53,16 @@ function Categorie(props) {
                     <>
                       <tr key={an} className="titretable">
                         <td>{an.id_categorie}</td>
-                        <td><input type="text" id="text" placeholder={an.libelle}/></td>
+                        <td><input type="text" id="tex" placeholder={an.libelle}/></td>
                         <td>
                         <div
                             onClick={async () => {
-                                let text = document.getElementById('text');
+                                let text = document.getElementById('tex');
                                 let obj = {
                                     id_categorie:an.id_categorie,
                                     libelle:text.value
                                 }
+                                console.log(obj)
                               let url =
                                 "https://webservicevoiture-production.up.railway.app/categorie/update" 
                               let token = localStorage.getItem("Token");
