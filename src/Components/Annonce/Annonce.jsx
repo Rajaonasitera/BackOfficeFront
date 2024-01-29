@@ -1,8 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css.css"
+import Header from "../Header/Header";
 
 function Annonce(props) {
-  return (
+  return (<>
+    <Header></Header>
     <div class="ambony">
         <header id="head">
             <div class="container">
@@ -44,6 +46,7 @@ function Annonce(props) {
             </div>
         </div>
     </div>
+    </>
   );
 }
 
