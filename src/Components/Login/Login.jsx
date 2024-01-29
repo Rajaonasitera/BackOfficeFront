@@ -6,19 +6,28 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const nav = useNavigate();
   return (
+    <>
+    <div className="bienvenue">
+    <h1 style={{color:'black'}}>BACKOFFICE</h1>
+    <p style={{color:'black'}}>Bienvenue dans le backoffice de notre site de vente de voitures ! 
+      Nous sommes ravis de vous accueillir dans cet espace 
+      dédié à la gestion efficace de notre plateforme. 
+      En tant qu'administrateurs, vous avez désormais accès à un ensemble d'outils puissants 
+      qui vous permettront de surveiller et de gérer toutes les activités liées à notre site.</p>
+      </div>
     <div className="login-container">
-      <h1>Login</h1>
+      <h1 style={{color:'black'}}>Login</h1>
       <form>
         <label htmlFor="username">
           <img src={user_icon} alt="X" width="10px" /> Identifiant
         </label>
-        <input type="text" id="username" />
+        <input type="email" id="username" value="admin@gmail.com" />
 
         <label htmlFor="password">
           <img src={mdp_icon} alt="X" width="10px" /> Mot de passe
         </label>
 
-        <input type="password" id="password" />
+        <input type="password" id="password" value="1234" />
 
         <button
           type="button"
@@ -81,6 +90,7 @@ const Login = () => {
         {/* <button><a href="/Accueil">Log in</a></button> */}
       </form>
     </div>
+    </>
   );
 };
 
