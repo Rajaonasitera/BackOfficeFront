@@ -1,7 +1,7 @@
 body{
     background: url('../Assets/motivid-org-7RY9A5Kz55Q-unsplash.jpg') center center/cover no-repeat;
     background-color: antiquewhite;
-
+    color: white;
 }
 .ambony{
     margin-top: 100px;
@@ -11,4 +11,11 @@ body{
     margin: 20px; /* Marge extérieure, ajustez selon vos besoins */
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre en bas à droite */
     border-radius: 10px;
+}
+.titretable {
+    color: black;
+}
+.insertion{
+    width: 70%;
+    margin: auto;
 }

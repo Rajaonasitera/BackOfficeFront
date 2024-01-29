@@ -43,14 +43,14 @@ function Energie(props) {
                 <div class="row">
                     <div class="col-lg-12 col-md-8 col-sm-8">
                         <table class="table table-striped table-bordered">
-                            <tr>
+                            <tr className="titretable">
                                 <th>Id Energie</th>
                                 <th>Nom Energie</th>
                             </tr>
                             {all.map(function (an, index, array) {
                   return (
                     <>
-                      <tr key={an}>
+                      <tr key={an} className="titretable">
                         <td>{an.id_energie}</td>
                         <td><input type="text" id="text" placeholder={an.libelle}/></td>
                         <td>
@@ -108,6 +108,7 @@ function Energie(props) {
 
             </div>
         </div>
+        <div className="insertion">
         <h1>Ajouter une nouvelle energie</h1>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">
@@ -144,6 +145,7 @@ function Energie(props) {
         >
           Insert
         </button>
+        </div>
       </div>
   );
 }

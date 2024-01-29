@@ -7,7 +7,8 @@ import Login from './Components/Login/Login';
 import PageCategorie from './Pages/PageCategorie';
 import PageMarque from './Pages/PageMarque';
 import PageEnergie from './Pages/PageEnergie';
-import BoiteVitesse from './Components/Gestion/Boite_vitesse';
+import BoiteVitesse from './Pages/PageBoite_vitesse';
+import PageStats from './Pages/PageStats';
 
 function App() {
 
@@ -25,8 +26,8 @@ function App() {
         <Route path="/Marque" element={<PageMarque />}/>
         <Route path="/Energie" element={<PageEnergie />}/>
         <Route path="/Boite_vitesse" element={<BoiteVitesse />}/>
-        {/* <Route path="/Accueil" element={<Accueil />}/>
-        <Route path="/Accueil" element={<Accueil />}/>  */}
+        <Route path="/Statistique" element={<PageStats />}/>
+        {/* <Route path="/Accueil" element={<Accueil />}/>   */}
        {/* <Route path="/" element={<Login />}> */}
       </Routes>
     </BrowserRouter>

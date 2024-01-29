@@ -16,15 +16,15 @@ function Header(props) {
             <Dropdown>
                 <Dropdown.Toggle variant="dark">Gestion</Dropdown.Toggle>
                 <Dropdown.Menu>
-                    <Dropdown.Item><Link to={'/Marque'}>Marque</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to={'/Categorie'}>Categorie</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to={'/Energie'}>Energie</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to={'/Boite_vitesse'}>Boite de vitesse</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to={'/Marque'} style={{color:"black"}}>Marque</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to={'/Categorie'} style={{color:"black"}}>Categorie</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to={'/Energie'} style={{color:"black"}}>Energie</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to={'/Boite_vitesse'} style={{color:"black"}}>Boite de vitesse</Link></Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             </div>
             <div>
-            <Button variant="dark">Statistiques</Button>
+            <Button variant="dark"><Link to={'/Statistique'}>Statistiques</Link></Button>
             </div>
             <div>
             <Button variant="dark">Annonces en attente</Button>

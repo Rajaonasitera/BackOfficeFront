@@ -44,14 +44,14 @@ function Categorie(props) {
           <div class="row">
             <div class="col-lg-12 col-md-8 col-sm-8">
               <table class="table table-striped table-bordered">
-                <tr>
+                <tr className="titretable">
                   <th>Id Categorie</th>
                   <th>Nom Categorie</th>
                 </tr>
                 {all.map(function (an, index, array) {
                   return (
                     <>
-                      <tr key={an}>
+                      <tr key={an} className="titretable">
                         <td>{an.id_categorie}</td>
                         <td><input type="text" id="text" placeholder={an.libelle}/></td>
                         <td>
@@ -107,6 +107,8 @@ function Categorie(props) {
             </div>
           </div>
         </div>
+        </div>
+        <div className="insertion">
         <h1>Ajouter une nouvelle categorie</h1>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">

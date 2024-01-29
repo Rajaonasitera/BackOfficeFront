@@ -3,7 +3,26 @@ import '../Assets/css/material-dashboard.css.map';
 import "./stats.css"
 
 const Stats = () => {
-
+    // const [all, setAll] = useState([]);
+    // const fnct = async () => {
+    //   let url =
+    //     "https://webservicevoiture-production.up.railway.app/categorie/list";
+    //   let token = localStorage.getItem("Token");
+    //   console.log("tok :" + token);
+    //   let response = await fetch(url, {
+    //     method: "GET",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //       Authorization: "Bearer " + token,
+    //     },
+    //   });
+    //   response = await response.json();
+    //   setAll(response.object);
+    // };
+  
+    // useEffect(() => {
+    //   fnct();
+    // }, []);
     return(
     <div class="ambony">
 
