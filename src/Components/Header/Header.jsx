@@ -19,7 +19,7 @@ function Header(props) {
                     <Dropdown.Item><Link to={'/Marque'}>Marque</Link></Dropdown.Item>
                     <Dropdown.Item><Link to={'/Categorie'}>Categorie</Link></Dropdown.Item>
                     <Dropdown.Item><Link to={'/Energie'}>Energie</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to={'/Marque'}>Boite de vitesse</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to={'/Boite_vitesse'}>Boite de vitesse</Link></Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             </div>

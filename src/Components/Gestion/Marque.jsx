@@ -107,7 +107,7 @@ function Marque(props) {
 
             </div>
         </div>
-        <h1>Ajouter une nouvelle categorie</h1>
+        <h1>Ajouter une nouvelle marque</h1>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">
             Libelle

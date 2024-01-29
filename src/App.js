@@ -25,8 +25,8 @@ function App() {
         <Route path="/Marque" element={<PageMarque />}/>
         <Route path="/Energie" element={<PageEnergie />}/>
         <Route path="/Boite_vitesse" element={<BoiteVitesse />}/>
-        <Route path="/Accueil" element={<Accueil />}/>
-        <Route path="/Accueil" element={<Accueil />}/> 
+        {/* <Route path="/Accueil" element={<Accueil />}/>
+        <Route path="/Accueil" element={<Accueil />}/>  */}
        {/* <Route path="/" element={<Login />}> */}
       </Routes>
     </BrowserRouter>
