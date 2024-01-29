@@ -12,3 +12,11 @@ body{
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre en bas à droite */
     border-radius: 10px;
 }
+.tableAnn{
+    /* width: 100; */
+    /* font-size: ; */
+    color: black;
+}
+.lead{
+    color: black;
+}

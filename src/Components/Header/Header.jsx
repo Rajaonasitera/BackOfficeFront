@@ -27,7 +27,7 @@ function Header(props) {
             <Button variant="dark"><Link to={'/Statistique'}>Statistiques</Link></Button>
             </div>
             <div>
-            <Button variant="dark">Annonces en attente</Button>
+            <Button variant="dark"><Link to={'/Accueil'}>Annonces en attente</Link></Button>
             </div>
             <div>
             <Button variant="dark"><FontAwesomeIcon icon={faSignOutAlt} /> Logout</Button>

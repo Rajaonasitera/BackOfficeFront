@@ -44,7 +44,7 @@ const Login = () => {
             console.log("Token :"+response.token);
             if (response.status === "ok") {
               localStorage.setItem("Token", response.object.token);
-              nav("/Categorie");
+              nav("/Accueil");
               // window.location.href = "/Annonce";
             } else {
               nav("/");
