@@ -2,14 +2,14 @@ import './App.css';
 // import Header from './Components/Header/Header';
 import Accueil from './Components/Accueil/Accueil'
 import Annonce from './Components/Annonce/Annonce';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Login from './Components/Login/Login';
 
 function App() {
+
   return(
     <div>
-      {/* <Header/> */}
-      {/* <Annonce/> */}
+   
 
 
       <BrowserRouter>
