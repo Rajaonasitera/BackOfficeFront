@@ -41,10 +41,10 @@ const Login = () => {
             });
             response = await response.json();
             console.log(response);
-            console.log(response.token);
+            console.log("Token :"+response.token);
             if (response.status === "ok") {
-              localStorage.setItem("Token", response.token);
-              nav("/Annonce");
+              localStorage.setItem("Token", response.object.token);
+              nav("/Categorie");
               // window.location.href = "/Annonce";
             } else {
               nav("/");

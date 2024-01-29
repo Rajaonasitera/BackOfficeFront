@@ -2,9 +2,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
 import { Dropdown, Button } from 'react-bootstrap';
 import logo from "../Assets/img/tesla-model-s.png";
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 function Header(props) {
   return (
@@ -16,10 +16,10 @@ function Header(props) {
             <Dropdown>
                 <Dropdown.Toggle variant="dark">Gestion</Dropdown.Toggle>
                 <Dropdown.Menu>
-                    <Dropdown.Item>Marque</Dropdown.Item>
-                    <Dropdown.Item>Categorie</Dropdown.Item>
-                    <Dropdown.Item>Energie</Dropdown.Item>
-                    <Dropdown.Item>Boite de vitesse</Dropdown.Item>
+                    <Dropdown.Item><Link to={'/Marque'}>Marque</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to={'/Categorie'}>Categorie</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to={'/Energie'}>Energie</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to={'/Marque'}>Boite de vitesse</Link></Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             </div>

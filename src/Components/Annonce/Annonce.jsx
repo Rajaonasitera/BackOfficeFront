@@ -4,18 +4,19 @@ import "./css.css"
 // import { useEffect } from "react";
 
 function Annonce(props) {
-    // const all = []; 
+    const all = [1,2]; 
     // useEffect(async ()=>{
     //     let url = 'https://webservicevoiture-production.up.railway.app/annonce/list';
+    //     let token = localStorage.getItem("Token")
     //     let response = await fetch(url,{
     //       method:"GET",
     //       headers:{
-    //         "Content-Type":"application/json"
+    //         "Content-Type":"application/json",
+    //         "Autorisation": token
     //       }
-    //       , body: JSON.stringify(auth)
     //     })
     //     response = await  response.json()
-    //     all = response.object;
+    //     all.push(response.object);
     // },<></>)
   return (<>
     {/* <Header></Header> */}
@@ -44,24 +45,23 @@ function Annonce(props) {
                                 <th>Modele</th>
                                 <th>Prix</th>
                             </tr>
-                            {/* {all.map(function (an, index,array) {
+                            {all.map(function (an, index,array) {
                                 return(
                                     <>
-                                    <tr key={an}>
-                                        {/* <th>{an.id_annonce}</th>
-                                        <th>{an.}</th> */}
-                                        {/* <th></th>
+                                    {/* <tr key={an}>
+                                        <th>{an.id_annonce}</th>
+                                        <th>{an.}</th>
+                                        <th></th>
                                         <th></th>
                                         <th></th>
                                         <td>Accepter</td>
                                         <td>Refuser</td>
-                                    </tr>
-                                    </> */}
-                                {/* ) */}
-                         {/* }) */}
+                                    </tr> */}
+                                    </>
+                                )
+                         })
 
-                            {/* } */}
-                            {/* //  } } */}
+                            }
                         </table>
                     </div>
                 </div>
