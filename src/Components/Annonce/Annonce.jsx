@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css.css"
-import Header from "../Header/Header";
+// import Header from "../Header/Header";
 // import { useEffect } from "react";
 
 function Annonce(props) {
@@ -18,7 +18,7 @@ function Annonce(props) {
     //     all = response.object;
     // },<></>)
   return (<>
-    <Header></Header>
+    {/* <Header></Header> */}
     <div class="ambony">
         <header id="head">
             <div class="container">

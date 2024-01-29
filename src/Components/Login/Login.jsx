@@ -5,7 +5,6 @@ import mdp_icon from '../Assets/password.png'
 
 
 const Login = () => {
-    // let [ok,setOk] = useState("ok");
     return(
     <div className="login-container">
       <h1>Login</h1>
