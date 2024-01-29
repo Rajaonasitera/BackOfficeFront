@@ -30,7 +30,7 @@ function Header(props) {
             <Button variant="dark"><Link to={'/Accueil'}>Annonces en attente</Link></Button>
             </div>
             <div>
-            <Button variant="dark"><FontAwesomeIcon icon={faSignOutAlt} /> Logout</Button>
+            <Button variant="dark"><FontAwesomeIcon icon={faSignOutAlt} /> <Link to={'/'}>Logout</Link></Button>
             </div>
 
 
