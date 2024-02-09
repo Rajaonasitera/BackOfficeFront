@@ -6,7 +6,7 @@ function Boite_vitesse(props) {
     const [all, setAll] = useState([]);
   const fnct = async () => {
     let url =
-      "https://webservicevoiture-production.up.railway.app/boite_vitesse/list";
+      "https://buycarwebservice-production.up.railway.app/boite_vitesse/list";
     let token = localStorage.getItem("Token");
     console.log("tok :" + token);
     let response = await fetch(url, {
@@ -61,7 +61,7 @@ function Boite_vitesse(props) {
                                     libelle:text.value
                                 }
                               let url =
-                                "https://webservicevoiture-production.up.railway.app/boite_vitesse/update" 
+                                "https://buycarwebservice-production.up.railway.app/boite_vitesse/update" 
                               let token = localStorage.getItem("Token");
                               await fetch(url, {
                                 method: "POST",
@@ -81,7 +81,7 @@ function Boite_vitesse(props) {
                           <div
                             onClick={async () => {
                               let url =
-                                "https://webservicevoiture-production.up.railway.app/boite_vitesse/delete/" +
+                                "https://buycarwebservice-production.up.railway.app/boite_vitesse/delete/" +
                                 an.id_boite_vitesse;
                               let token = localStorage.getItem("Token");
                               await fetch(url, {
@@ -129,7 +129,7 @@ function Boite_vitesse(props) {
             };
             console.log(boite_vitesse);
             let url =
-              "https://webservicevoiture-production.up.railway.app/boite_vitesse/insert";
+              "https://buycarwebservice-production.up.railway.app/boite_vitesse/insert";
             let token = localStorage.getItem("Token");
             await fetch(url, {
               method: "PUT",

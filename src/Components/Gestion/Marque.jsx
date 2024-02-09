@@ -6,7 +6,7 @@ function Marque(props) {
     const [all, setAll] = useState([]);
   const fnct = async () => {
     let url =
-      "https://webservicevoiture-production.up.railway.app/marque/list";
+      "https://buycarwebservice-production.up.railway.app/marque/list";
     let token = localStorage.getItem("Token");
     console.log("tok :" + token);
     let response = await fetch(url, {
@@ -61,7 +61,7 @@ function Marque(props) {
                                     libelle:text.value
                                 }
                               let url =
-                                "https://webservicevoiture-production.up.railway.app/marque/update" 
+                                "https://buycarwebservice-production.up.railway.app/marque/update" 
                               let token = localStorage.getItem("Token");
                               await fetch(url, {
                                 method: "POST",
@@ -81,7 +81,7 @@ function Marque(props) {
                           <div
                             onClick={async () => {
                               let url =
-                                "https://webservicevoiture-production.up.railway.app/marque/delete/" +
+                                "https://buycarwebservice-production.up.railway.app/marque/delete/" +
                                 an.id_marque;
                               let token = localStorage.getItem("Token");
                               await fetch(url, {
@@ -128,7 +128,7 @@ function Marque(props) {
             };
             console.log(marque);
             let url =
-              "https://webservicevoiture-production.up.railway.app/marque/insert";
+              "https://buycarwebservice-production.up.railway.app/marque/insert";
             let token = localStorage.getItem("Token");
             await fetch(url, {
               method: "PUT",

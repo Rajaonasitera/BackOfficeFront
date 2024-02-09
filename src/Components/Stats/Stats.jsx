@@ -8,7 +8,7 @@ const Stats = () => {
     const [vente, setVente] = useState(0);
     const fnct = async () => {
       let url1 =
-        "https://webservicevoiture-production.up.railway.app/stats/nbutilisateur";
+        "https://buycarwebservice-production.up.railway.app/stats/nbutilisateur";
       let token = localStorage.getItem("Token");
       console.log("tok :" + token);
       let response1 = await fetch(url1, {
@@ -22,7 +22,7 @@ const Stats = () => {
       setUtilisateur(response1.object);
 
       let url =
-        "https://webservicevoiture-production.up.railway.app/stats/nbvente";
+        "https://buycarwebservice-production.up.railway.app/stats/nbvente";
       console.log("tok :" + token);
       let response = await fetch(url, {
         method: "GET",

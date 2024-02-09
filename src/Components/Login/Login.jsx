@@ -7,6 +7,7 @@ const Login = () => {
   const nav = useNavigate();
   return (
     <>
+    <div className="bodylogin">
     <div className="bienvenue">
     <h1 style={{color:'black'}}>BACKOFFICE</h1>
     <p style={{color:'black'}}>Bienvenue dans le backoffice de notre site de vente de voitures ! 
@@ -40,7 +41,7 @@ const Login = () => {
             };
             console.log(auth);
             let url =
-              "https://webservicevoiture-production.up.railway.app/auth/authenticate";
+              "https://buycarwebservice-production.up.railway.app/auth/authenticate";
             let response = await fetch(url, {
               method: "POST",
               headers: {
@@ -60,27 +61,6 @@ const Login = () => {
 
               // window.location.href = "/";
             }
-
-            // var xhr = new XMLHttpRequest();
-            // xhr.open('POST', url , true);
-            // xhr.onload = function () {
-            //   if (xhr.status >= 200 && xhr.status < 300) {
-            //     // Succès de la requête
-            //     var data = JSON.parse(xhr.responseText);
-            //     localStorage.setItem('Token',data);
-            //     window.location.href('/Accueil');
-            //     console.log(data);
-            //   } else {
-            //     // Gestion des erreurs
-            //     window.location.href('/');
-            //     console.error('La requête a échoué avec un statut:', xhr.status);
-            //   }
-            // };
-            // xhr.onerror = function () {
-            //   // Gestion des erreurs
-            //   console.error('Une erreur s\'est produite lors de la requête.');
-            // };
-            // xhr.send(auth);
           }}
           id="loginbtn"
         >
@@ -89,6 +69,7 @@ const Login = () => {
 
         {/* <button><a href="/Accueil">Log in</a></button> */}
       </form>
+    </div>
     </div>
     </>
   );

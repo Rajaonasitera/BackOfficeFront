@@ -8,7 +8,7 @@ function Categorie(props) {
   const [all, setAll] = useState([]);
   const fnct = async () => {
     let url =
-      "https://webservicevoiture-production.up.railway.app/categorie/list";
+      "https://buycarwebservice-production.up.railway.app/categorie/list";
     let token = localStorage.getItem("Token");
     console.log("tok :" + token);
     let response = await fetch(url, {
@@ -53,18 +53,19 @@ function Categorie(props) {
                     <>
                       <tr key={an} className="titretable">
                         <td>{an.id_categorie}</td>
-                        <td><input type="text" id="tex" placeholder={an.libelle}/></td>
+                        <td><input type="text" id="tex" placeholder={an.libelle}></input></td>
                         <td>
                         <div
                             onClick={async () => {
-                                let text = document.getElementById('tex');
+                                let text = document.getElementById("tex");
+                                console.log("jbkbskb "+text.value)
                                 let obj = {
                                     id_categorie:an.id_categorie,
                                     libelle:text.value
                                 }
                                 console.log(obj)
                               let url =
-                                "https://webservicevoiture-production.up.railway.app/categorie/update" 
+                                "https://buycarwebservice-production.up.railway.app/categorie/update" 
                               let token = localStorage.getItem("Token");
                               await fetch(url, {
                                 method: "POST",
@@ -80,11 +81,11 @@ function Categorie(props) {
                             Modifier
                             </div>
                             </td>
-                        <td>
+                        <td key={an} >
                           <div
                             onClick={async () => {
                               let url =
-                                "https://webservicevoiture-production.up.railway.app/categorie/delete/" +
+                                "https://buycarwebservice-production.up.railway.app/categorie/delete/" +
                                 an.id_categorie;
                               let token = localStorage.getItem("Token");
                               await fetch(url, {
@@ -130,7 +131,7 @@ function Categorie(props) {
             };
             console.log(categorie);
             let url =
-              "https://webservicevoiture-production.up.railway.app/categorie/insert";
+              "https://buycarwebservice-production.up.railway.app/categorie/insert";
             let token = localStorage.getItem("Token");
             await fetch(url, {
               method: "PUT",

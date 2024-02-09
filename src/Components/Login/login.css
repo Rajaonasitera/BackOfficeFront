@@ -3,6 +3,9 @@ body{
 /* height: 100px; */
     
 }
+.bodylogin{
+  background-color: radial-gradient(circle, #ff0000, #0000ff);
+}
 .bienvenue{
   width: 50%;
   text-align: center;

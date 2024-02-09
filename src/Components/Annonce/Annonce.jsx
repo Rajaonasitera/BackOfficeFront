@@ -8,7 +8,7 @@ function Annonce(props) {
   const [noValide, setNoValide] = useState([]);
   const fnct = async () => {
     let url =
-      "https://webservicevoiture-production.up.railway.app/annonce/listnonvalider";
+      "https://buycarwebservice-production.up.railway.app/annonce/listnonvalider";
     let token = localStorage.getItem("Token");
     console.log("tok :" + token);
     let response = await fetch(url, {
@@ -72,7 +72,7 @@ function Annonce(props) {
                             <div
                               onClick={async () => {
                                 let url =
-                                  "https://webservicevoiture-production.up.railway.app/annonce/valider/"+an.id_annonce;
+                                  "https://buycarwebservice-production.up.railway.app/annonce/valider/"+an.id_annonce;
                                 let token = localStorage.getItem("Token");
                                 await fetch(url, {
                                   method: "POST",
